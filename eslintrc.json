@@ -1,0 +1,56 @@
+{
+    "extends": "airbnb",
+    "parser": "babel-eslint",
+    "env": {
+      "browser": true,
+      "node": true,
+      "es6": true,
+      "mocha": true,
+      "jest": true
+    },
+    "rules": {
+      "semi": ["error", "never"],
+      "indent": ["warn", "tab", { "SwitchCase": 1 }],
+      "quotes": ["error", "single", {"allowTemplateLiterals": true, "avoidEscape": true}],
+      "max-len": [2, 120, 2],
+      "jsx-quotes": ["error", "prefer-double"],
+      "prefer-rest-params": 1,
+      "react/jsx-no-bind": 1,
+      "react/jsx-indent": ["warn", "tab"],
+      "react/jsx-indent-props": ["warn", "tab"],
+      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+      "react/no-multi-comp": 1,
+      "space-before-function-paren": ["error", {
+        "anonymous": "never",
+        "named": "never",
+        "asyncArrow": "always"
+      }],
+      "prefer-destructuring": [
+        "error", {
+          "VariableDeclarator": {
+            "array": false,
+            "object": false
+          },
+          "AssignmentExpression": {
+            "array": true,
+            "object": false
+          }
+        }, {
+          "enforceForRenamedProperties": false
+        }
+      ],
+      "arrow-parens": ["error", "always"],
+      "arrow-body-style": "warn",
+      "no-unused-vars": ["error", { "varsIgnorePattern": "style" }],
+      "comma-dangle": ["error", "never"],
+      "no-underscore-dangle": 1,
+      "spaced-comment": "warn",
+      "jsx-a11y/click-events-have-key-events": 0,
+      "jsx-a11y/no-static-element-interactions": 0,
+      "jsx-a11y/no-autofocus": 0,
+      "camelcase": "warn",
+      "no-await-in-loop": "warn",
+      "func-names": ["warn", "as-needed"]
+    }
+}
+  
