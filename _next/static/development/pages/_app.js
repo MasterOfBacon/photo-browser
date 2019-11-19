@@ -107,7 +107,7 @@ function Navigation() {
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/photo-browser/",
+    href: "/",
     as: "/",
     __source: {
       fileName: _jsxFileName,
@@ -127,7 +127,7 @@ function Navigation() {
     },
     __self: this
   }, "Etusivu"))), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/photo-browser/images",
+    href: "/images",
     as: "/images",
     __source: {
       fileName: _jsxFileName,
@@ -147,7 +147,7 @@ function Navigation() {
     },
     __self: this
   }, "Kuvagalleria"))), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/photo-browser/albums",
+    href: "/albums",
     as: "/albums",
     __source: {
       fileName: _jsxFileName,
