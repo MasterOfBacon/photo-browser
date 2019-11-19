@@ -1,4 +1,6 @@
 const withCSS = require('@zeit/next-css')
+const axios = require('axios')
+
 module.exports = withCSS({
     onDemandEntries: {
         maxInactiveAge: 1000 * 60 * 60
@@ -18,19 +20,12 @@ module.exports = withCSS({
     const albumList = responseAlbums.data
     const albumPages = albumList.reduce((pages, post) =>
         Object.assign({}, pages, {
-            [`${assetPrefix}/albums/images/${post.id}`]: { page: `${assetPrefix}/albums/images/[id]` },
+            [`/albums/images/${post.id}`]: { page: `/albums/images/[id]` },
         }),
         {}
     )
 
-    const combined = Object.assign({}, defaultPathMap, imagePages, albumPages, {
-        // [`${assetPrefix}/`]: { page: '/' },
-        // [`${assetPrefix}/_app`]: { page: '/_app' },
-        // [`${assetPrefix}/images`]: { page: '/images' },
-        // [`${assetPrefix}/albums`]: { page: '/albums' },
-        // [`${assetPrefix}/images/[id]`]: { page: '/images/[id]' },
-        // [`${assetPrefix}/albums/images/[id]`]: { page: '/photo-browser/albums/images/[id]' },
-    })
+    const combined = Object.assign({}, defaultPathMap, imagePages, albumPages)
         return combined
     },
 })
