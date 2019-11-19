@@ -33,7 +33,7 @@ function ImageList(props: Props) {
                 key={`image_${imageData.id}`}
                 imageData={imageData}
                 thumbnailClassName="thumbnail"
-                href={`/images/[imageid]`}
+                href={`/images/[id]`}
                 as={`/images/${imageData.id}`}
                 size={50}
                 imageClassName="img-thumbnail"

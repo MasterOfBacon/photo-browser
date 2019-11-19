@@ -3,7 +3,8 @@ import Image from '../../components/Images/Image'
 import { connect } from 'react-redux'
 import ImageList from '../../components/ImageList'
 
-const ImageComponent = () => {
+const ImageComponent = (props: any) => {
+    console.log('props: ', props)
     return (
         <>
             <ImageList />

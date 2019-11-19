@@ -21,7 +21,7 @@ interface Props {
 
 const Image = (props: Props) => {
     const router = useRouter()
-    const imageid = router.query && router.query.imageid && router.query.imageid.toString()
+    const imageid = router.query && router.query.id && router.query.id.toString()
     const [loading, setLoading] = useState(true)
     useEffect(() => {
         if (imageid) {

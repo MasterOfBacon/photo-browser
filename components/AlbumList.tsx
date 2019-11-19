@@ -42,7 +42,7 @@ function AlbumList(props: Props) {
                     key={`album_image_${imageData.id}`}
                     imageData={imageData}
                     thumbnailClassName="album-thumbnail"
-                    href="/albums/images/[imageid]"
+                    href="/albums/images/[id]"
                     as={`/albums/images/${imageData.id}`}
                     size={20}
                     imageClassName="album-image-thumbnail"
