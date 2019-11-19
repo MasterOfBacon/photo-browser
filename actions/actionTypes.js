@@ -1,6 +1,0 @@
-export const SET_IMAGES = 'SET_IMAGES'
-export const SET_PAGE = 'SET_PAGE'
-export const SET_SINGLE_IMAGE = 'SET_SINGLE_IMAGE'
-export const SET_ALBUMS = 'SET_ALBUMS'
-export const SET_ALBUM_IMAGES = 'SET_ALBUM_IMAGES'
-export const SET_ALBUM = 'SET_ALBUM'
