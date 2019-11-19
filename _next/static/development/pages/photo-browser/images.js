@@ -119,7 +119,7 @@ function ImageList(props) {
       key: "image_".concat(imageData.id),
       imageData: imageData,
       thumbnailClassName: "thumbnail",
-      href: "/photo-browser/images/[imageid]",
+      href: "/photo-browser/images/[id]",
       as: "/photo-browser/images/".concat(imageData.id),
       size: 50,
       imageClassName: "img-thumbnail",
@@ -14899,7 +14899,7 @@ const Images = () => {
 
 /***/ }),
 
-/***/ 7:
+/***/ 8:
 /*!************************************************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fphoto-browser%2Fimages&absolutePagePath=%2FUsers%2Feeromerilainen%2FDocuments%2FPhotoBrowser%2Fphoto-browser-next-jatkuu%2Fpages%2Fphoto-browser%2Fimages.tsx ***!
   \************************************************************************************************************************************************************************************************************/
@@ -14922,5 +14922,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[7,"static/runtime/webpack.js","styles"]]]);
+},[[8,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=images.js.map

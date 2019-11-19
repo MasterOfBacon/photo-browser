@@ -194,7 +194,7 @@ function AlbumList(props) {
         key: "album_image_".concat(imageData.id),
         imageData: imageData,
         thumbnailClassName: "album-thumbnail",
-        href: "/photo-browser/albums/images/[imageid]",
+        href: "/photo-browser/albums/images/[id]",
         as: "/photo-browser/albums/images/".concat(imageData.id),
         size: 20,
         imageClassName: "album-image-thumbnail",
@@ -14960,7 +14960,7 @@ const Albums = () => {
 
 /***/ }),
 
-/***/ 9:
+/***/ 10:
 /*!************************************************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fphoto-browser%2Falbums&absolutePagePath=%2FUsers%2Feeromerilainen%2FDocuments%2FPhotoBrowser%2Fphoto-browser-next-jatkuu%2Fpages%2Fphoto-browser%2Falbums.tsx ***!
   \************************************************************************************************************************************************************************************************************/
@@ -14983,5 +14983,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[9,"static/runtime/webpack.js","styles"]]]);
+},[[10,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=albums.js.map
