@@ -1,6 +1,6 @@
 const axios = require('axios')
 
-const backendUrl = 'http://jsonplaceholder.typicode.com'
+const backendUrl = 'https://jsonplaceholder.typicode.com'
 
 export const getImages = async (_page: number | null, _limit: number | null, albumId: number | null) => {
     try {
