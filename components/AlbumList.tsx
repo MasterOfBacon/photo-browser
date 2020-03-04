@@ -13,15 +13,14 @@ import {
 interface Props {
     albumImages: Photos
     albums: Albums,
-    albumId: number
-    fetchAlbumImages(albumid: number): Action
+    albumId: string
+    fetchAlbumImages(albumid: string): Action
     fetchAlbums(page: number | null, limit: number | null): Action
 }
 
 function AlbumList(props: Props) {
     useEffect(() => {
-        const fetchAlbums = async () => props.fetchAlbums(null, null)
-        fetchAlbums()
+        props.fetchAlbums(null, null)
     }, [])
     const renderAlbums = props.albums && props.albums.map((albumData: any) => {
         const albumSelected = props.albumId === albumData.id ? 'selected' : ''
@@ -77,7 +76,7 @@ const mapStoreToProps = (store: any) => ({
 
 const mapDispatchToProps = (dispatch: any) => ({
     fetchAlbums: () => dispatch(actions.fetchAlbums(null, null)),
-    fetchAlbumImages: (albumId: number) => dispatch(actions.fetchAlbumImages(albumId))
+    fetchAlbumImages: (albumId: string) => dispatch(actions.fetchAlbumImages(albumId))
 })
 
 export default connect(

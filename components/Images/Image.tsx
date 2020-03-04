@@ -5,6 +5,7 @@ import { connect } from 'react-redux'
 import * as actions from '../../actions/imageListActions'
 import Loader from 'react-loader-spinner'
 import Link from 'next/link'
+import Img from 'react-image'
 import { Dispatch as Action } from 'redux';
 
 import {
@@ -26,13 +27,12 @@ const Image = (props: Props) => {
     useEffect(() => {
         if (imageid) {
             setLoading(true)
-            const getSingleImage = async () => await props.fetchSingleImage(imageid)
-            getSingleImage()
+            props.fetchSingleImage(imageid)
         }
     }, [
         imageid
     ])
-    const imageUrl = props.image && props.image.url
+    const imageUrl = props.image && props.image.urls && props.image.urls.regular
     const renderLoading = (
         <div className="loader-front">
             <Loader
@@ -64,10 +64,10 @@ const Image = (props: Props) => {
                     <div>
                         {!loading && props.image && props.image.title}
                         { loading && renderLoading}
-                            <img
+                            <Img
                                 onLoad={() => setLoading(false)}
                                 src={`${imageUrl}`}
-                                className={`img-fullimage ${loading && 'hide'}`}
+                                className={`img-fullimage`}
                             />
                     </div>
                 </Popup>

@@ -3,9 +3,13 @@
 }
 
 html {
-  background-color: #34466d;
+  background-color: #6d6d6d;
   font-family: Palatino Linotype, sans-serif;
   color: #ffffff;
+}
+
+body {
+  margin: 0;
 }
 
 a {
@@ -22,7 +26,7 @@ a {
 }
 
 .ImageList {
-  display: inline-block;
+
 }
 
 .thumbnails-container {
@@ -44,8 +48,7 @@ a {
 }
 
 .thumbnail {
-  display: block;
-  float: left;
+  display: inline-block;
   height: 10rem;
   width: 10rem;
   position: relative;
@@ -66,6 +69,8 @@ a {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  max-width: 60vw;
+  max-height: 75vh;
 }
 
 .img-fullimage .hide {
@@ -73,9 +78,7 @@ a {
 }
 
 .albums-container {
-  float: left;
-  margin-left: 0.8rem;
-  width: 30vw;
+
 }
 
 .albums-header {
@@ -83,13 +86,13 @@ a {
 }
 
 .album {
-    display: block;
+    display: inline-block;
     border: solid 2px;
-    border-color: #6789d1;
+    border-color: #525252;
     border-radius: 2px;
     padding: 0.3rem;
-    margin-bottom: 4px;
-    background-color: #32649c;
+    margin: 2px;
+    background-color: #545454;
     cursor: pointer;
 }
 
@@ -100,16 +103,7 @@ a {
 }
 
 .album-open-container {
-  float: left;
-  width: 55vw;
-  min-height: 50vh;
-  border: solid 2px;
-  border-color: #6789d1;
-  border-radius: 2px;
-  margin: 1.5rem 0rem 0rem 2rem;
-  background-color: #32649c;
-  position: sticky;
-  top: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 .album-image-thumbnail {
@@ -124,16 +118,29 @@ a {
   position: relative;
 }
 
+ul {
+  list-style-type: none;
+}
+
+ul.navigation {
+  padding-inline-start: 0rem;
+  display: flex;
+  justify-content: space-between;
+  height: 3rem;
+  width: 80vw;
+  margin: 0 auto 1rem auto;
+}
 
 ul.navigation li {
-  display: inline-block;
+  display: flex;
   color: #000;
-  padding: 1rem 2rem 1rem 2rem;
   text-decoration: none;
+  flex: 1;
+  flex-direction: column;
 }
 
 ul.navigation li:hover:not(.active) {
-  background-color: #293b64;
+  background-color: #666666;
   color: white;
   cursor: pointer;
 }
@@ -151,4 +158,9 @@ ul.navigation li:hover:not(.active) {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.link-class {
+  margin: auto;
+  padding: 0 1rem;
 }

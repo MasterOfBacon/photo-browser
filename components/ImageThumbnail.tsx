@@ -26,7 +26,7 @@ function ImageThumbnail(props: any) {
     const thumbnail = (
         <div className={thumbnailClassName}>
             {loading && renderLoading}
-            <img onLoad={() => setLoading(false)} src={imageData.thumbnailUrl} className={imageClassName} />
+            <img style={{ width: 150, height: 150 }} onLoad={() => setLoading(false)} src={imageData.urls && imageData.urls.thumb} className={imageClassName} />
         </div>
     )
     return (

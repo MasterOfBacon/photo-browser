@@ -36,7 +36,7 @@ export function setSingleImage(image: SingleImage | Object) {
 export function fetchImages(page: number, limit: number) {
     return async (dispatch: Dispatch) => {
         try {
-            const images = await API.getImages(page, limit, null)
+            const images = await API.getImages(page, limit)
             dispatch(setImages(images))
         } catch (err) {
             console.log('Error fetching images')

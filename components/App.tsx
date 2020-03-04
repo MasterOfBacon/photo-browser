@@ -14,7 +14,4 @@ const Layout: FunctionComponent<any> = (props) => {
   )
 }
 
-export default connect(
-  null,
-  null
-)(Layout)
+export default connect()(Layout)

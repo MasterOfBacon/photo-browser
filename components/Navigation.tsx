@@ -8,17 +8,23 @@ function Navigation() {
             <ul className="navigation">
                 <Link href="/" as={`/`}>
                     <li>
-                        <a>Etusivu</a>
+                        <div className="link-class">
+                            <a>Etusivu</a>
+                        </div>
                     </li>
                 </Link>
                 <Link href="/images" as={`/images`}>
                     <li>
-                        <a>Kuvagalleria</a>
+                        <div className="link-class">
+                            <a>Kuvagalleria</a>
+                        </div>
                     </li>
                 </Link>
                 <Link href="/albums" as={`/albums`}>
                     <li>
-                        <a>Albumit</a>
+                        <div className="link-class">
+                            <a>Albumit</a>
+                        </div>
                     </li>
                 </Link>
             </ul>

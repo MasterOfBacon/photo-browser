@@ -22,8 +22,7 @@ interface Props {
 
 function ImageList(props: Props) {
     useEffect(() => {
-        const getImages = async () => props.fetchImages(props.page, props.limit)
-        getImages()
+        props.fetchImages(props.page, props.limit)
     }, [
         props.page, props.limit
     ])

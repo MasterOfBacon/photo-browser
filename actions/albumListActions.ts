@@ -37,18 +37,18 @@ export function setAlbumImages(albumImages: Photos | Array<object>) {
     }
 }
 
-export function setAlbum(albumId: number) {
+export function setAlbum(albumId: string) {
     return {
         type: SET_ALBUM,
         albumId
     }
 }
 
-export function fetchAlbumImages(albumId: number) {
+export function fetchAlbumImages(albumId: string) {
     return async (dispatch: Dispatch) => {
         try {
             dispatch(setAlbum(albumId))
-            const albumImages = await API.getImages(null, null, albumId)
+            const albumImages = await API.getAlbumPhotos(0, 20, albumId)
             dispatch(setAlbumImages(albumImages))
         } catch (err) {
             console.log('Error fetching single image')

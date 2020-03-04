@@ -10,13 +10,16 @@ export type SingleImage = {
     albumId?: number,
     id?: number,
     title?: string,
-    url?: string,
+    urls?: {
+        thumb: string,
+        regular: string
+    },
     thumbnailUrl?: string
 }
 
 export type Albums = Array<{
     userId: number,
-    id: number,
+    id: string,
     title: string
 }>
 
