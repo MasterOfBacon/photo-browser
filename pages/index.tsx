@@ -1,4 +1,6 @@
 import React from 'react'
+import ImagesScroll from '../components/ImagesScroll'
+import { connect } from 'react-redux'
 
 const Index = () => {
     return (
@@ -11,9 +13,9 @@ const Index = () => {
                     {'By Eero Meriläinen'}
                 </h3>
             </div>
+            <ImagesScroll />
         </div>
     )
 }
 
-export default Index
-
+export default connect(state => state)(Index)

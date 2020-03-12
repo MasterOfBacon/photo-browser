@@ -8,12 +8,13 @@ import {
     ImageListState
 } from '../types'
 
-const initialState = {
+export const initialState = {
     imageList: [],
     page: 1,
     limit: 20,
     image: {}
 }
+
 import { Reducer } from 'redux'
 
 const imageList: Reducer<ImageListState> = (state = initialState, action) => {

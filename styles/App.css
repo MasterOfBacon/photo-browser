@@ -39,12 +39,17 @@ a {
 .page-button {
   padding: 0.4rem 1.4rem 0.4rem 1.4rem;
   margin: 0.4rem 0.2rem 0.6rem 0.2rem;
-  background-color: #67d175;
+  background-color: #545454;
   border: 0.2rem solid;
-  border-color: #329c40;
+  border-color: #525252;
   display: inline-block;
   cursor: pointer;
   user-select: none;
+}
+
+.page-button:hover {
+  border-color: #333333;
+  background-color: #444444;
 }
 
 .thumbnail {
@@ -78,7 +83,8 @@ a {
 }
 
 .albums-container {
-
+  width: 80vw;
+  margin: 0 auto;
 }
 
 .albums-header {
@@ -163,4 +169,25 @@ ul.navigation li:hover:not(.active) {
 .link-class {
   margin: auto;
   padding: 0 1rem;
+}
+
+.ImagesScroll {
+  margin-top: 4rem;
+}
+
+.carousel-single-image {
+  display: inline-block;
+  max-height: 12rem;
+}
+
+.carousel .slide {
+  background: #5d5d5d;
+}
+
+.carousel .thumb {
+  max-height: 4rem;
+}
+
+.carousel.carousel-slider {
+  margin: 0px auto;
 }

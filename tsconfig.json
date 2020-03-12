@@ -21,7 +21,7 @@
     "resolveJsonModule": true,
     "noEmit": true,
     "isolatedModules": true,
-    "noImplicitAny": true
+    "noImplicitAny": true,
   },
   "include": [
     "pages", "logic", "components", "actions", "reducers"

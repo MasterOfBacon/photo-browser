@@ -7,10 +7,9 @@ import Layout from '../components/App'
 
 const makeStore = () => {
     return store
-};
+}
 
 class MyApp extends App {
-
     static async getInitialProps({ Component, ctx }: any) {
         const pageProps = Component.getInitialProps ? await Component.getInitialProps(ctx) : {}
         return { pageProps }

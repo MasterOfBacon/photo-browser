@@ -2,8 +2,7 @@ export type Photos = Array<{
     albumId: number,
     id: number,
     title: string,
-    url: string,
-    thumbnailUrl: string
+    url: string
 }>
 
 export type SingleImage = {
@@ -13,12 +12,10 @@ export type SingleImage = {
     urls?: {
         thumb: string,
         regular: string
-    },
-    thumbnailUrl?: string
+    }
 }
 
 export type Albums = Array<{
-    userId: number,
     id: string,
     title: string
 }>
