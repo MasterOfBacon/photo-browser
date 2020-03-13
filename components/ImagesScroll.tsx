@@ -9,7 +9,6 @@ import { Action } from 'redux'
 
 import {
     Photos,
-    SingleImage,
     RootState
 } from '../types'
 
@@ -22,7 +21,7 @@ function ImagesScroll(props: Props) {
     useEffect(() => {
         props.fetchImages(0, 20)
     }, [])
-    const images = props.imageList.map((image: SingleImage) => {
+    const images = props.imageList.map((image) => {
         const url = image.urls && image.urls.thumb
         return (
             <div key={`image_${image.id}`} className="carousel-single-image">

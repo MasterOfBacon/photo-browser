@@ -12,7 +12,12 @@ export const initialState = {
     imageList: [],
     page: 1,
     limit: 20,
-    image: {}
+    image: {
+        albumId: undefined,
+        id: undefined,
+        title: undefined,
+        urls: undefined
+    }
 }
 
 import { Reducer } from 'redux'

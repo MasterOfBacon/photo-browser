@@ -8,7 +8,6 @@ import { Action } from 'redux'
 
 import {
     Photos,
-    SingleImage,
     RootState
 } from '../types'
 
@@ -26,7 +25,7 @@ function ImageList(props: Props) {
     }, [
         props.page, props.limit
     ])
-    const renderImageThumbnails = props.imageList.map((imageData: SingleImage) => {
+    const renderImageThumbnails = props.imageList.map((imageData) => {
         return (
             <ImageThumbnail
                 key={`image_${imageData.id}`}

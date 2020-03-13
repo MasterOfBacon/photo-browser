@@ -22,7 +22,7 @@ function AlbumList(props: Props) {
     useEffect(() => {
         props.fetchAlbums(null, null)
     }, [])
-    const renderAlbums = props.albums && props.albums.map((albumData: any) => {
+    const renderAlbums = props.albums && props.albums.map((albumData) => {
         const albumSelected = props.albumId === albumData.id ? 'selected' : ''
         return (
             <div
@@ -35,7 +35,7 @@ function AlbumList(props: Props) {
         )
     })
     const renderOpenAlbumImages = () => {
-        const imageComponents = props.albumImages && props.albumImages.map((imageData: any) => {
+        const imageComponents = props.albumImages && props.albumImages.map((imageData) => {
             return (
                 <ImageThumbnail
                     key={`album_image_${imageData.id}`}

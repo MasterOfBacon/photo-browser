@@ -2,17 +2,20 @@ export type Photos = Array<{
     albumId: number,
     id: number,
     title: string,
-    url: string
+    urls: {
+        thumb: string,
+        regular: string
+    } | undefined
 }>
 
 export type SingleImage = {
-    albumId?: number,
-    id?: number,
-    title?: string,
-    urls?: {
+    albumId: number | undefined,
+    id: number | undefined,
+    title: string | undefined,
+    urls: {
         thumb: string,
         regular: string
-    }
+    } | undefined
 }
 
 export type Albums = Array<{

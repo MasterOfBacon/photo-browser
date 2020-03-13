@@ -1,7 +1,7 @@
 const axios = require('axios')
 
-const backendUrl = 'https://api.unsplash.com'
-const accessKey = 'ACCESS_KEY_HERE'
+export const backendUrl = 'https://api.unsplash.com'
+export const accessKey = 'ACCESS_KEY_HERE'
 
 export const getImages = async (_page: number | null, _limit: number | null) => {
     try {
